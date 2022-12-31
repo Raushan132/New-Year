@@ -9,11 +9,13 @@ body{
 }
 
 h1#text {
-    position: absolute;
+  	position: absolute;
     z-index: 9;
     transform: rotate(-45deg) translateX(-19px);
     color: #120d128c;
     text-transform: capitalize;
+    font-size: 26px;
+    text-align: center;
     text-shadow: 2px 7px 13px #0c0f0f;
 }
 .container{
