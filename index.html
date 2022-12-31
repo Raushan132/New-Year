@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Love</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+
+		<div class="box box1" style="--top:50%;--left:20%;--size:.2">
+			<div class="heart" style="--heart: #00f;"></div>
+		</div>
+
+		<div class="box" style="--top:20%;--left:20%;--size:.2">
+			<div class="heart" style="--heart:#5DA7DB"></div>
+		</div>
+		
+		<div class="box box2" style="--top:35%;--left:15%;--size:.2">
+			<div class="heart" style="--heart: #ff0;"></div>
+		</div>
+		
+		<div class="box box_fall_1" style="--top:50%;--left:80%;--fall:10s">
+			<div class="heart" style="--heart: #F56EB3"></div>
+		</div>
+		
+		<div class="box box_fall_2" style="--top:20%;--left:70%;--fall:20s">
+			<div class="heart" style="--heart: #ff0;"></div>
+		</div>
+		
+		<div class="box" style="--top:20%;--left:50%;--size:.2">
+			<div class="heart" style="--heart: #ff0;"></div>
+		</div>
+
+		<div class="box box1" style="--top:50%;--left:20%;--size:.2">
+			<div class="heart" style="--heart: #0fd;"></div>
+		</div>
+
+		<div class="box" style="--top:30%;--left:30%;--size:.2">
+			<div class="heart" style="--heart:  #460C68;"></div>
+		</div>
+		
+		<div class="box box2" style="--top:95%;--left:95%;--size:.2">
+			<div class="heart" style="--heart: #ff0;"></div>
+		</div>
+		
+		<div class="box box_fall_1" style="--top:85%;--left:18%;--fall:10s">
+			<div class="heart" style="--heart: #82C3EC;"></div>
+		</div>
+		
+		<div class="box box_fall_2" style="--top:20%;--left:25%;--fall:20s">
+			<div class="heart" style="--heart: #f0f;"></div>
+		</div>
+
+		<div class="box box_fall_1" style="--top:85%;--left:10%;--fall:5s">
+			<div class="heart" style="--heart: #ff0;"></div>
+		</div>
+
+		<div class="box box_fall_1" style="--top:85%;--left:90%;--fall:6s">
+			<div class="heart" style="--heart: #460C68;"></div>
+		</div>
+		<div class="box box_fall_2" style="--top:85%;--left:65%;--fall:8s">
+			<div class="heart" style="--heart: #ff0;"></div>
+		</div>
+		<div class="box box_fall_1" style="--top:85%;--left:40%;--fall:14s">
+			<div class="heart" style="--heart: #460C68;"></div>
+		</div>
+		
+		<div class="box box_fall_2" style="--top:20%;--left:60%;--fall:15s">
+			<div class="heart" style="--heart:#F66B0E;"></div>
+		</div>
+		
+		<div class="box box_beat" style="--top:10%;--left:1%;--beat:5s">
+			<div class="heart" style="--heart: #F56EB3"></div>
+		</div>
+
+		<div class="box box1" style="--top:90%;--left:20%;--size:.4">
+			<div class="heart" style="--heart: #00f;"></div>
+		</div>
+		<div class="box box2" style="--top:80%;--left:95%;--size:1.5">
+			<div class="heart" style="--heart: #CB1C8D"></div>
+		</div>
+
+		<div class="box" style="--top:20%;--left:80%;--size:.5">
+			<div class="heart" style="--heart:#5DA7DB"></div>
+		</div>
+		<div class="box" style="--top:80%;--left:70%;--size:.3">
+			<div class="heart" style="--heart:##FF0833"></div>
+		</div>
+
+		<div class="box box_beat" style="--top:14%;--left:65%;--size:.3">
+			<div class="heart" style="--heart:#FF0833"></div>
+		</div>
+
+		<div class="box box_beat" style="--top:80%;--left:70%;--beat:4s">
+			<div class="heart" style="--heart:#FF0833"></div>
+		</div>
+
+		<div class="box box_fall_1" style="--top:5%;--left:3%;--fall:25s">
+			<div class="heart" style="--heart: #F56EB3"></div>
+		</div>
+		
+		<div class="box box_fall_2" style="--top:20%;--left:5%;--fall:13s">
+			<div class="heart" style="--heart: #f0f;"></div>
+		</div>
+
+
+	</div>
+	<div class="box" style="--top:50%;--left:50%;--size:2; transform: translate(-50%,-50%);">
+		<div class="heart" style="--heart:#F00">
+			<h1 id="text"></h1>
+		</div>
+	</div>
+	<div class="new_year">
+		Happy New Year 2023
+	</div>
+      
+      <script type="text/javascript">
+      	  var id=window.location.search;
+      	  const s= new URLSearchParams(id);
+      	  document.getElementById('text').innerText=s.get('id');
+      </script>
+</body>
+</html>

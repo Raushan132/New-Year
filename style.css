@@ -1,0 +1,186 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	background: #ff7ee78a;
+	overflow: hidden;
+}
+
+h1#text {
+    position: absolute;
+    z-index: 9;
+    transform: rotate(-45deg) translateX(-19px);
+    color: #120d128c;
+    text-transform: capitalize;
+    text-shadow: 2px 7px 13px #0c0f0f;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.box{
+		position: absolute;
+	top:var(--top);
+	left: var(--left);
+	transform: scale(var(--size));
+	
+	
+
+}
+
+.heart{
+	width: 100px;
+	height: 100px;
+	background: var(--heart);
+	transform:rotate(45deg);
+}
+.heart::after{
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+    background: var(--heart);
+    border-radius: 50%;
+    
+}
+.heart::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+    background:var(--heart);;
+    border-radius: 50%;
+    
+}
+
+.new_year {
+    position: absolute;
+    top: 30px;
+    font-size: 86px;
+    text-align: center;
+    left: 50%;
+    color: #ea2a88;
+    text-shadow: 5px 5px 10px #ea2a88;
+    transform: translateX(-50%);
+    animation:text_animate 5s linear infinite;
+}
+
+/*Animation classes ... below*/
+.box1{
+	animation: box1 10s linear infinite;
+}
+.box2{
+	animation: box2 10s linear infinite;
+}
+
+.box_fall_1{
+	animation: fall_1 var(--fall) linear infinite;
+}
+.box_fall_2{
+	animation: fall_2 var(--fall) linear infinite;
+}
+.box_beat{
+	animation: beat var(--beat) linear infinite;
+}
+
+
+
+/*key Frames animation below...*/
+@keyframes box1{
+	0%{
+		transform:rotate(0deg) scale(0.2);
+		
+	}
+	100%{
+		transform:rotate(360deg) scale(0.2);
+
+	}
+}
+
+@keyframes box2{
+	0%{
+		transform:rotate(0deg) scale(0.4);
+		
+	}
+	100%{
+		transform:rotate(-360deg) scale(0.4);
+
+	}
+}
+
+@keyframes fall_1{
+	0%{
+		transform:rotate(0deg) scale(0.4);
+		top:-100px;
+		
+	}
+	100%{
+		transform:rotate(-360deg) scale(0.4);
+		top:120%;
+	}
+}
+
+@keyframes fall_2{
+	0%{
+		transform:rotate(0deg) scale(0.3);
+		top:-100px;
+		
+	}
+	100%{
+		transform:rotate(360deg) scale(0.3);
+		top:120%;
+	}
+}
+
+@keyframes beat{
+	0%{
+		transform:scale(0.5);	
+	}
+	50%{
+		transform:scale(0.8)
+	}
+	100%{
+		transform:scale(0.5);	
+	}
+}
+
+@keyframes text_animate{
+	0%{
+		text-shadow: 5px 5px 10px #ea2a88;
+	}
+	25%{
+		text-shadow: 0px 0px 10px #f00;
+	}
+	50%{
+		text-shadow: -5px -5px 10px #ea2a88;
+	}
+	75%{
+	    text-shadow: 0px 0px 10px #f00;
+	}
+	100%{
+		text-shadow: 5px 5px 10px #ea2a88;
+	}
+}
+
+@media (max-width:720px){
+.new_year {
+    position: absolute;
+    top: 50px;
+    font-size: 42px;
+    text-align: center;
+    left: 50%;
+    color: #ea2a88;
+    text-shadow: 5px 5px 10px #ea2a88;
+    
+    animation:text_animate 5s linear infinite;
+}
+}
